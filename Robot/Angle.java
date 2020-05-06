@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Robot;
 
-/**
- *
- * @author 0.2
- */
 public class Angle {
     private Point first;
     private Point second;
@@ -27,7 +18,7 @@ public class Angle {
     }
 
     private double angleCalculation()  {
-        Point base = new Point(0, 1);
+        Point base = new Point(1, 0);
         Point p1 = new Point( second.getX() - first.getX(), second.getY() - first.getY());
         Point p2 = new Point( base.getX() - first.getX(),base.getY() - first.getY());        
         double ang_final = getAtanAngle( p1) - getAtanAngle( p2);
@@ -38,7 +29,8 @@ public class Angle {
             return ang_final;
         }     
     }
-    private static double getAtanAngle(Point evaluateAngle)  {
+    
+    private double getAtanAngle(Point evaluateAngle)  {
         return Math.atan2( evaluateAngle.getX(), evaluateAngle.getY());
     }
 }
