@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Measure {
 	public Point location = null;

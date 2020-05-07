@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Place {
 	public Point location = null;

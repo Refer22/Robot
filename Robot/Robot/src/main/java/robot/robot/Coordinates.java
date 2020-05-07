@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Coordinates {
     private Point _init = null;
@@ -8,7 +8,7 @@ public class Coordinates {
         _init = init;
     }
     
-    //Know angle and 2 points
+  //Know angle and 2 points
     public Triangle calculateNextCord()   {
         double step = (Math.random() % 2) + 1;
         Angle myAngle = new Angle( getInit(), getSeed());

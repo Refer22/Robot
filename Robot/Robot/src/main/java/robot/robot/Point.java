@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Point {
     private double _x;
@@ -9,7 +9,12 @@ public class Point {
         _y = y;
     }
     
-    public void desplazar(double dx, double dy){
+    public Point() {
+		_x = 0.0;
+		_y = 0.0;
+	}
+
+	public void desplazar(double dx, double dy){
         _x += dx;
         _y += dy;
     }

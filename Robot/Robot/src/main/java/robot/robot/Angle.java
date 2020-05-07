@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Angle {
     private Point first;
@@ -29,8 +29,7 @@ public class Angle {
             return ang_final;
         }     
     }
-    
-    private double getAtanAngle(Point evaluateAngle)  {
+    private static double getAtanAngle(Point evaluateAngle)  {
         return Math.atan2( evaluateAngle.getX(), evaluateAngle.getY());
     }
 }

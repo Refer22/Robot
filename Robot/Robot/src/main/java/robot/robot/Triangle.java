@@ -1,4 +1,4 @@
-package Robot;
+package robot.robot;
 
 public class Triangle {
     private double _catA = 0;
@@ -11,7 +11,7 @@ public class Triangle {
         _hypotenuse = hip;
     }
     
-    public double get_catA()    {
+	public double get_catA()    {
         return _catA;
     }
 
