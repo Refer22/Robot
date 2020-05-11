@@ -51,7 +51,7 @@ public class Robot implements Runnable {
 	public void run() {
 		while (true) {
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(60000);
 				minute++;
 				distance += updateOffset();
 				isNearToPlace();
